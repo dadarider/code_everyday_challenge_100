@@ -22,6 +22,9 @@
     height: auto;
     /* background-color: bisque; */
     height: 85vh;
+    width: 90%;
+    margin: auto;
+    
 }
 
 .logo237 {
@@ -37,7 +40,11 @@ div {
     border-radius: 10px;
     background-attachment: fixed;
     background: no-repeat;
+    background-size: auto 100%;
+    background-position: center;
     z-index: 2;
+    flex: 0.5;
+    transition: flex 0.8s ease-in;
 
 
 
@@ -57,49 +64,39 @@ div {
     align-items: flex-end;
 }
 
-.opacity {
+.opacity p {
     opacity: 0;
+    width: 100%;
+    transition: 0.3s ease-in;
 }
 
-.opacity:hover {
-    opacity: 1;
-}
 
-.opacity:active {
-    opacity: 1;
-}
 
-p:hover {
-    display: flex;
+.active .opacity:active {
     opacity: 1;
 }
 
 
 
-div:active {
+
+
+.active{
+    flex: 5;
+}
+
+div:active p {
     animation: love 2s ease-in-out forwards;
+   
 }
 
 div:hover {
     animation: love 1s ease-in-out forwards;
+    
+}
+.divtof.active p{
+    opacity: 1;
 }
 
-
-
-
-@keyframes love {
-    0% {
-        width: 10vw;
-
-
-    }
-
-    100% {
-        width: 55vw;
-
-    }
-
-}
 
 
 .villes1 {
