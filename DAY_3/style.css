@@ -37,6 +37,10 @@ body{
 
   
 }
+
+.container.show-nav .circle{
+  transform: rotate(-70deg);
+}
 .circle button{position: absolute;
   top: 50%;
   left: 50%;
@@ -66,10 +70,54 @@ body{
 
 }
 
+.container.show-nav + nav li{
+  transform :translate(0);
+  transition-delay :0.3s;
+
+}
+
 .content img{
   max-width: 100%;
 }
 
+/* /* .content{max-width: 1000px;
+  margin: 50px auto;} */
+
+.content h1{
+  margin: 0;
+
+}
+
+.content cite{
+  color: #555;
+}
+
+.content p{
+  color: #333;
+  line-height: 1.5s;
+}
+i{
+  padding: 10px;
+}
+
+li{
+  list-style: none;
+  margin: 30px 0;
+  /* transform: translateX(-100%); */
+  transition: transform 0.5s ease-in;
+}
+
+ul li+li{
+  margin-left: 15px;
+  transform: translateX(-150%);
+}
+
+
+
+ul li+li+li{
+  margin-left: 30px;
+  transform: translateX(-200%);
+}
 
 nav{
   color: white;
@@ -77,4 +125,17 @@ nav{
 
 i{
   color: white;
+}
+
+.content img{
+  max-width :100%
+}
+
+.content {
+  max-width: 1000px;
+  margin: 50px auto ;
+}
+
+.nav0{
+  display: none;
 }
